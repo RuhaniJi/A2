@@ -36,14 +36,13 @@ public class Client{
         
         // ***** objects *****
         ProgramInfo pInfo = new ProgramInfo("A2");
-        //Scanner scanner = new Scanner(System.in);
         //NumberFormat currency = NumberFormat.getCurrencyInstance();
 
-        // file io buffers for reading and writing to text files
-
-        //BufferedReader fin = new BufferedReader(new FileReader("filename.txt"));
-        //PrintWriter fout = new PrintWriter(new BufferedWriter(new FileWriter("outfle.txt")));
-
+        Employee e1 = new Employee();
+        Employee e2 = new Employee(50, 30);
+        Employee e3 = new Employee(30, 25);
+        Employee e4 = new Employee(20, 100);
+        
         // ***** print banners *****
 
         System.out.println(pInfo.getBanner());
@@ -55,6 +54,11 @@ public class Client{
 
         // ***** Print Formatted Output *****
 
+        System.out.println(e1.toString());
+        System.out.println(e2.toString());
+        System.out.println(e3.toString());
+        System.out.println(e4.toString());
+        
         // ***** Closing Message *****
 
         System.out.println();
